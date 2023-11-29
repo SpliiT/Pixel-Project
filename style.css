@@ -1,0 +1,199 @@
+body {
+    zoom:80%;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.sonic {
+    z-index: 1;
+    position: absolute;
+    width:15em;
+    height: 15em;
+    top: 75%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    animation: sonic-animation-course 2s linear forwards, sonic-animation-next 1.9s step-end forwards;
+}
+@keyframes sonic-animation-course {
+    0% {
+        left: 5%;
+    }
+    99% {
+        left: 95%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sonic-animation-next {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.coin1 {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    animation: coin1-animation 0.3s step-end forwards;
+}
+
+@keyframes coin1-animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.coin2 {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 75%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: coin2-animation 0.8s step-end forwards;
+}
+@keyframes coin2-animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.coin3 {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    animation: coin3-animation 1.3s step-end forwards;
+}
+@keyframes coin3-animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.coin4 {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 75%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: coin4-animation 1.7s step-end forwards;
+}
+@keyframes coin4-animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.flag {
+    position: absolute;
+    width: 300px;
+    height: 800px;
+    top: 50%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    animation: flag-animation 21.8s step-end forwards;
+}
+
+
+.flagblanc {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 70%;
+    left: 95.55%;
+    transform: translate(-50%, -50%);
+    animation: flagblanc-animation 1.8s linear forwards;
+}
+@keyframes flagblanc-animation {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.flagsonic {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 70%;
+    left: 95.59%;
+    transform: translate(-50%, -50%);
+    animation: flagsonic-animation 1.8s linear forwards, flagsonic-animation-up 3s linear forwards;
+}
+@keyframes flagsonic-animation {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flagsonic-animation-up {
+    0% {
+        top:70%;
+    }
+    65% {
+        top: 70%;
+    }
+    100% {
+        top: 29%;
+    }
+}
+
+.win {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: win-animation 1.8s linear forwards;
+}
+
+@keyframes win-animation {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
