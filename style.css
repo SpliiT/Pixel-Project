@@ -83,7 +83,7 @@ body {
     top: 75%;
     left: 65%;
     transform: translate(-50%, -50%);
-    animation: coin3-animation 1.3s step-end forwards;
+    animation: coin3-animation 1.2s step-end forwards;
 }
 @keyframes coin3-animation {
     0% {
@@ -266,7 +266,7 @@ body {
     top: 20.4%;
     left: 61.5%;
     transform: translate(-50%, -50%);
-    animation: un-animation 0.65s step-end forwards;
+    animation: un-animation 0.7s step-end forwards;
 }
 
 @keyframes un-animation {
@@ -286,7 +286,7 @@ body {
     top: 20.4%;
     left: 61.5%;
     transform: translate(-50%, -50%);
-    animation: deux-animation 0.9s step-end forwards;
+    animation: deux-animation 1s step-end forwards;
 }
 @keyframes deux-animation {
     0% {
@@ -305,7 +305,7 @@ body {
     top: 20.4%;
     left: 61.5%;
     transform: translate(-50%, -50%);
-    animation: trois-animation 1.4s step-end forwards;
+    animation: trois-animation 1.5s step-end forwards;
 }
 @keyframes trois-animation {
     0% {
@@ -324,7 +324,7 @@ body {
     top: 20.4%;
     left: 61.5%;
     transform: translate(-50%, -50%);
-    animation: quatre-animation 1.4s step-end forwards;
+    animation: quatre-animation 1.6s step-end forwards;
 }
 @keyframes quatre-animation {
     0% {
@@ -332,5 +332,75 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+.door { 
+    position: absolute;
+    top:35.25%;
+    left: 1.75%;
+    height: 26.6em;
+    width: 32.6em;
+    margin: 0;
+    padding: 0;
+    animation: door-animation 2s linear forwards;
+}
+
+@keyframes door-animation {
+    0% {
+        filter: opacity(0);
+    }
+    99% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(1);
+    }
+}
+
+.man {
+    width: 12em;
+    height: 15em;
+    position: absolute;
+    top:62.5%;
+    transform: translate(-50%, -50%);
+    animation: man-animation-spawn 4s linear forwards, man-animation-course 8s linear forwards, man-animation-despawn 8s linear forwards;
+}
+
+@keyframes man-animation-spawn {
+    0% {
+        filter: opacity(0);
+    }
+    5% {
+        filter: opacity(0);
+    }
+    50% {
+        filter: opacity(0);
+    }
+    53% {
+        filter: opacity(1);
+    }
+    100% {
+        filter: opacity(1);
+    }
+}
+
+@keyframes man-animation-course {
+
+    5% {
+        left: 14%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
+@keyframes man-animation-despawn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
