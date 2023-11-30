@@ -11,8 +11,8 @@ body {
 .sonic {
     z-index: 1;
     position: absolute;
-    width:15em;
-    height: 15em;
+    height: auto;
+    max-width: 10%;
     top: 75%;
     left: 5%;
     transform: translate(-50%, -50%);
@@ -191,6 +191,143 @@ body {
         opacity: 0;
     }
     99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.droite {
+    position: absolute;
+    top: -5%;
+    right: 15%;
+    animation: droite-animation 1.8s linear forwards;
+}
+@keyframes droite-animation {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.gauche {
+    position: absolute;
+    top: -5%;
+    left: 15%;
+    animation: gauche-animation 1.8s linear forwards;
+}
+@keyframes gauche-animation {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.points {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.zero {
+    position: absolute;
+    top: 20.4%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    animation: zero-animation 0.4s linear forwards;
+}
+@keyframes zero-animation {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.un {
+    position: absolute;
+    top: 20.4%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    animation: un-animation 0.65s step-end forwards;
+}
+
+@keyframes un-animation {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.deux {
+    position: absolute;
+    top: 20.4%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    animation: deux-animation 0.9s step-end forwards;
+}
+@keyframes deux-animation {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.trois {
+    position: absolute;
+    top: 20.4%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    animation: trois-animation 1.4s step-end forwards;
+}
+@keyframes trois-animation {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.quatre {
+    position: absolute;
+    top: 20.4%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    animation: quatre-animation 1.4s step-end forwards;
+}
+@keyframes quatre-animation {
+    0% {
         opacity: 0;
     }
     100% {
